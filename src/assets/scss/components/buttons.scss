@@ -1,15 +1,18 @@
-@import '../variables';
+@import "../variables";
 
 .btn {
   height: 35px;
   width: 150px;
   border: none;
-  border-radius: 4px;
+  border-radius: 7px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .btn-primary {
-    background: $btn-primary;
-    color: $primary;
+  background: $btn-primary;
+  color: $primary;
+  font-size: 18px;
 }
-
-

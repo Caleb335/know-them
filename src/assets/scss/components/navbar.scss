@@ -1,25 +1,27 @@
 header {
-    background: $secondary;
-    color: $primary;
+  background: $secondary;
+  color: $primary;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px 0 30px;
+
+  & h1 {
+    padding-top: 12px;
+  }
+
+  & nav ul {
     display: flex;
-    justify-content: space-around;
-    
-    & h1 {
-        padding-top: 12px;
+
+    & li {
+      list-style-type: none;
+      line-height: 36px;
+      font-size: 24px;
+      margin: 15px;
     }
 
-    & nav ul {
-        display: flex;
-       
-        & li {
-            list-style-type: none;
-            line-height: 36px;
-            font-size: 24px;
-            margin: 15px;
-        }
-
-        & Button {
-            margin-top: 18px;
-        }
+    & Button {
+      margin-top: 18px;
+      margin-left: 20px;
     }
+  }
 }
