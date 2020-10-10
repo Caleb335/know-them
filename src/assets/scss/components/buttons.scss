@@ -1,0 +1,15 @@
+@import '../variables';
+
+.btn {
+  height: 35px;
+  width: 150px;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn-primary {
+    background: $btn-primary;
+    color: $primary;
+}
+
+

@@ -1,2 +1,7 @@
-@import './variables';
-@import './global.scss';
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+@import "./variables";
+@import "./global.scss";
+@import "./components/navbar.scss";
+@import "./components/buttons.scss";
+@import "./components/search.scss";
