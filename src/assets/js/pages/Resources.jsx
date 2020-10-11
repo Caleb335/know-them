@@ -1,14 +1,14 @@
 import React from 'react'
 import Navbar from "../components/Navbar"
 import Search from "../components/Search"
+import SearchBox from "../components/SearchBox"
 
 const Resources = () => {
 
   return (<>
     <Navbar/>
-    <Search className="form__control search" placeholder="Search"/>
-    <div>
-
+    <div style={{padding: 20}}>
+      <SearchBox placeholder="Search"/>
     </div>
   </>)
 }
