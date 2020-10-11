@@ -20,7 +20,7 @@ header {
     }
 
     & Button {
-      margin-top: 18px;
+      margin-top: 17px;
       margin-left: 20px;
     }
   }
@@ -31,5 +31,9 @@ header {
     nav li {
       display: none;
     }
+  }
+
+  @media only screen and (max-width: 768px) {
+    // optimize for tablets
   }
 }
