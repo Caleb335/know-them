@@ -11,6 +11,7 @@ const SearchBox = ({ placeholder, onChange }) => {
       border: `1px solid ${focused ? "#f00" : "#949494"}`,
       borderRadius: 10,
       padding: "2px 10px",
+      // marginTop: "-88%"
     },
     input: {
       outline: "none",

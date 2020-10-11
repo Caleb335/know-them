@@ -15,7 +15,11 @@ const Carousel = () => {
         {images.map(image => {
           return (
             <div key={image.id}>
-              <img src={image.src} className="slide__image" style={{ width: "100%" }} />
+              <img
+                src={image.src}
+                className='slide__image'
+                style={{ width: "100%" }}
+              />
             </div>
           )
         })}
