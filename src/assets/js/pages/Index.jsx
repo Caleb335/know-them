@@ -11,15 +11,15 @@ const Index = () => {
       <section id='home'>
         <Search className='form__control search' placeholder='Search' />
         <section className='call-to-action' id='cta'>
-          <h1>#ENDSARS</h1>
+          <h1 data-aos="zoom-in">#ENDSARS</h1>
           <div className='details'>
-            <p>
+            <p data-aos="fade-right">
               Nigerian Youth are mobilizing and protesting against the rampant
               brutality and harassment of the Special Anti-Robbery Squad in
               Nigeria. Here’s how you can help.
             </p>
             <p>Donate. Share. Tweet.</p>
-            <Button className='btn btn-primary'>Donate</Button>
+            <Button className='btn btn-primary' data-aos="zoom-in">Donate</Button>
           </div>
         </section>
         <About />

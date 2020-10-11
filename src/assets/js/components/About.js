@@ -3,9 +3,9 @@ import React from "react"
 const About = () => {
   return (
     <section id='about' className='about-them'>
-      <h1 className='about-title'>ABOUT #ENDSARS</h1>
+      <h1 className='about-title' data-aos="fade">ABOUT #ENDSARS</h1>
       <div className='about__details'>
-        <p>
+        <p data-aos="fade-up">
           ABOUT #ENDSARS The Special Anti-Robbery Squad was founded in 1992 by
           former police commissioner Simeon Danladi Midenda. SARS is one of the
           14 units in the Force Criminal Investigation and Intelligence
@@ -13,7 +13,7 @@ const About = () => {
           people involved in crimes like armed robbery, kidnapping and other
           forms of crimes.
         </p>
-        <p>
+        <p data-aos="fade-up">
           In 2009, after several years of operations the squad grew in number
           and strength. Due to the surge of internet fraudsters and cultism in
           universities, SARS operatives infiltrated Nigerian universities, made
@@ -31,12 +31,12 @@ const About = () => {
           on how SARS among other police unit profit 9.35Billion Naira
           ($60million) from roadblocks and extortion within 18 months.{" "}
         </p>
-        <p>
+        <p data-aos="fade-up">
           On 3 June 2011, the Nigeria Police Forced discovered an attempt by a
           SARS operative Musa Agbu to bomb the force headquarters because the
           IGP Hafiz Ringim scuttled his ambition.
         </p>
-        <p>
+        <p data-aos="fade-up">
           Following several reports of human rights violation by members of the
           public to the office of the Inspector General of Police, on 7 August
           2015, the then IGP Solomon Arase announced that it would be splitting
