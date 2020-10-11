@@ -1,16 +1,14 @@
-import React from 'react'
+import React from "react"
 
 const Card = ({ mediaSrc, mediaType, contentLink }) => {
   const cardStyle = {
     height: 40,
     width: 40,
-    background: '#F6F6F6',
+    background: "#F6F6F6",
   }
-  return(
+  return (
     <a href={contentLink}>
-      <div style={cardStyle}>
-
-      </div>
+      <div style={cardStyle}></div>
     </a>
   )
 }

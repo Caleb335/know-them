@@ -10,10 +10,20 @@ const Navbar = () => {
       <h1>#ENDSARS</h1>
       <nav>
         <ul>
-          <li>About</li>
-          <li>Info</li>
-          <li><Link to={resources}>Resources</Link></li>
-          <li>Support</li>
+          <li>
+            <Link className='link__text__white'>About</Link>
+          </li>
+          <li>
+            <Link className='link__text__white'>Info</Link>
+          </li>
+          <li>
+            <Link className='link__text__white' to={resources}>
+              Resources
+            </Link>
+          </li>
+          <li>
+            <Link className='link__text__white'>Support</Link>
+          </li>
           <Button className='btn btn-primary'>Donate</Button>
         </ul>
       </nav>

@@ -5,28 +5,33 @@
   font-family: "Oswald", sans-serif;
 }
 
+// globals
+.link__text__white {
+  color: $primary;
+  text-decoration: none;
 
-
-#home {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/src/assets/images/obafemi-end-sars.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 600px;
-  animation: shuffle 12s linear infinite;
-  animation-delay: 3s;
+  &:hover {
+    color: $btn-primary;
+    transition: all 0.5s ease-in-out;
+  }
 }
+
+.search {
+  margin-top: -80%;
+}
+// globs end here
 
 .call-to-action {
   width: 600px;
   margin-left: 7%;
-  margin-top: -4%;
-  color: $primary;
+  color: $secondary;
+  z-index: 9999;
+  margin-top: -40%;
 
   & h1 {
     font-size: 30px;
     padding: 15px;
+    color: $primary;
   }
 
   & .details {
@@ -43,6 +48,8 @@
     width: 100%;
     margin: 0 auto;
     padding: 12px;
+
+    margin-top: -105%;
   }
 }
 
@@ -75,77 +82,77 @@
   }
 }
 
-@keyframes shuffle {
-  0% {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("/src/assets/images/unadey.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: all 2s ;
-    transition-delay: 3s;
-  }
-  15% {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../images/stopkilling.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition-delay: 5s;
-    transition: all 2s ;
-  }
-  30% {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../images/9ja-wave-endsars-flag.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition-delay: 7s;
-    transition: all 2s ;
-  }
-  45% {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../images/dude-waving-endsars-flag.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition-delay: 9s;
-    transition: all 2s ;
-  }
-  60% {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../images/man-cuffed-lying-on-ground.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition-delay: 11s;
-    transition: all 2s;
-  }
-  75% {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../images/obafemi-end-sars.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition-delay: 13s;
-    transition: all 2s ;
-  }
-  90% {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../images/police-is-stealing-from-youths.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition-delay: 15s;
-    transition: all 2s ;
-  }
-  100% {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../images/man-lying-on-ground.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition-delay: 17s;
-    transition: all 2s ;
-  }
-}
+// @keyframes shuffle {
+//   0% {
+//     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+//       url("/src/assets/images/unadey.jpeg");
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     transition: all 2s;
+//     transition-delay: 3s;
+//   }
+//   15% {
+//     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+//       url("../images/stopkilling.jpeg");
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     transition-delay: 5s;
+//     transition: all 2s;
+//   }
+//   30% {
+//     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+//       url("../images/9ja-wave-endsars-flag.jpeg");
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     transition-delay: 7s;
+//     transition: all 2s;
+//   }
+//   45% {
+//     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+//       url("../images/dude-waving-endsars-flag.jpeg");
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     transition-delay: 9s;
+//     transition: all 2s;
+//   }
+//   60% {
+//     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+//       url("../images/man-cuffed-lying-on-ground.jpeg");
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     transition-delay: 11s;
+//     transition: all 2s;
+//   }
+//   75% {
+//     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+//       url("../images/obafemi-end-sars.jpeg");
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     transition-delay: 13s;
+//     transition: all 2s;
+//   }
+//   90% {
+//     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+//       url("../images/police-is-stealing-from-youths.jpeg");
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     transition-delay: 15s;
+//     transition: all 2s;
+//   }
+//   100% {
+//     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+//       url("../images/man-lying-on-ground.jpeg");
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     transition-delay: 17s;
+//     transition: all 2s;
+//   }
+// }
