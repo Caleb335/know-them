@@ -1,4 +1,6 @@
 import React from "react"
+import { Link } from "react-router-dom"
+import { resources } from "../../../Routes/routes"
 
 import Button from "./Buttons"
 
@@ -10,7 +12,7 @@ const Navbar = () => {
         <ul>
           <li>About</li>
           <li>Info</li>
-          <li>Resources</li>
+          <li><Link to={resources}>Resources</Link></li>
           <li>Support</li>
           <Button className='btn btn-primary'>Donate</Button>
         </ul>
