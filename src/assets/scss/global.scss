@@ -5,6 +5,8 @@
   font-family: "Oswald", sans-serif;
 }
 
+
+
 #home {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/src/assets/images/obafemi-end-sars.jpeg");
@@ -12,7 +14,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
-  animation: shuffle 12s ease-in infinite;
+  animation: shuffle 12s linear infinite;
   animation-delay: 3s;
 }
 
@@ -80,10 +82,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background: transparent;
-    transition: all 1s ease-in-out;
-    transition-delay: 1s;
-
+    transition: all 2s ;
+    transition-delay: 3s;
   }
   15% {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -91,8 +91,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transition-delay: 2s;
-    transition: all 1s ease-in-out;
+    transition-delay: 5s;
+    transition: all 2s ;
   }
   30% {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -100,8 +100,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transition-delay: 3s;
-    transition: all 1s ease-in-out;
+    transition-delay: 7s;
+    transition: all 2s ;
   }
   45% {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -109,8 +109,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transition-delay: 4s;
-    transition: all 1s ease-in-out;
+    transition-delay: 9s;
+    transition: all 2s ;
   }
   60% {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -118,8 +118,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transition-delay: 5s;
-    transition: all 1s ease-in-out;
+    transition-delay: 11s;
+    transition: all 2s;
   }
   75% {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -127,8 +127,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transition-delay: 6s;
-    transition: all 1s ease-in-out;
+    transition-delay: 13s;
+    transition: all 2s ;
   }
   90% {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -136,16 +136,16 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transition-delay: 7s;
-    transition: all 1s ease-in-out;
+    transition-delay: 15s;
+    transition: all 2s ;
   }
   100% {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../images/man-lying-on=ground.jpeg");
+      url("../images/man-lying-on-ground.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transition-delay: 8s;
-    transition: all 1s ease-in-out;
+    transition-delay: 17s;
+    transition: all 2s ;
   }
 }
