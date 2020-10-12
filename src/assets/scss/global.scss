@@ -104,11 +104,38 @@
 
     & .support-details {
       width: 750px;
+
+      & p {
+        font-weight: 300;
+      }
     }
 
     & Button {
       margin-top: 30px;
       text-align: center;
+      width: 180px;
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 35%;
+    padding: 28px;
+
+    & p {
+      font-weight: 300;
+    }
+
+    & .svg {
+      height: 68px;
+      width: 68px;
+    }
+
+    & .support-type {
+      & .support-details {
+        padding: 11px;
+      }
     }
   }
 }

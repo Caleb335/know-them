@@ -1,13 +1,18 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-const Button = ({ className, id, children, backgroundColor }) => {
+const Button = ({ className, id, children, backgroundColor, anime }) => {
   const styles = {
     backgroundColor,
   }
 
   return (
-    <button className={className} id={id} style={styles.backgroundColor}>
+    <button
+      className={className}
+      id={id}
+      style={styles.backgroundColor}
+      data-aos={anime}
+    >
       {children}
     </button>
   )

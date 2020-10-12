@@ -21,7 +21,7 @@ const Index = () => {
               Nigeria. Here’s how you can help.
             </p>
             <p data-aos='fade-right'>Donate. Share. Tweet.</p>
-            <Button className='btn btn-primary' data-aos='zoom-in'>
+            <Button className='btn btn-primary' anime='zoom-in'>
               Donate
             </Button>
           </div>

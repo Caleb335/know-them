@@ -60,5 +60,6 @@ export const support = [
     details:
       "If you are unable to donate or join a live protest, join the online outcry. Use the hashtags #ENDSARS, #ENDSARSNOW, #EndSARSImmediately, #EndPoliceBrutality.",
     icon: "src/assets/svg/share.svg",
+    action: "share",
   },
 ]
