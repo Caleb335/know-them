@@ -10,7 +10,7 @@ module.exports = {
         modules: [
             'node_modules', 'src'
         ], 
-        extensions: ['.jsx', '.js', '.scss', '.jpeg', '.jpg', '.png', '.svg', '.gif'] 
+        extensions: ['.jsx', '.js', '.scss'] 
     },
     module: {
         rules: [
@@ -30,6 +30,12 @@ module.exports = {
             {
                 test: /\.(png|jpe?g|gif|svg)$/,
                 use: ["file-loader"]
+            },
+            // add sourcemap as regards chrome err
+            {
+                test: /\.js$/,
+                enforce: 'pre',
+                use: ['source-map-loader'],
             }
         ]
     },

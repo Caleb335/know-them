@@ -1,7 +1,7 @@
 import React from "react"
 import Button from "../components/Buttons"
 
-import { support } from "../../../data"
+import { support } from "../data"
 
 const Support = () => {
   return (
