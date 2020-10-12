@@ -35,7 +35,7 @@ export const support = [
     title: "Donate",
     details:
       "You can donate funds to the help the protesters sustain the protest.  We promise complete  transparency in the disbursement of funds",
-    icon: "./src/assets/donate.svg",
+    icon: "src/assets/images/donate.svg",
     action: "DONATE",
   },
   {
@@ -43,7 +43,7 @@ export const support = [
     title: "Join the Protests",
     details:
       "You can join any protest in your area/state/country. Find out where.",
-    icon: "./src/assets/joinProtests.svg",
+    icon: "src/assets/images/joinProtests.svg",
     action: "Find a protest location",
   },
   {
@@ -51,7 +51,7 @@ export const support = [
     title: "CONTACT YOUR SENATORS",
     details:
       "As Nigerians, it is our right to demand good governance from our leaders. If you would like to send an automated message/email to your state senator on the issue of SARS, click the button below.",
-    icon: "./src/assets/contact.svg",
+    icon: "src/assets/images/contact.svg",
     action: "Send a message",
   },
   {
@@ -59,7 +59,7 @@ export const support = [
     title: "Share ",
     details:
       "If you are unable to donate or join a live protest, join the online outcry. Use the hashtags #ENDSARS, #ENDSARSNOW, #EndSARSImmediately, #EndPoliceBrutality.",
-    icon: "./src/assets/share.svg",
+    icon: "src/assets/images/share.svg",
     action: "share",
   },
 ]
