@@ -1,11 +1,11 @@
 import React from "react"
 import Button from "../components/Buttons"
 
-import { support } from "../data"
+import { support } from "../../../data"
 
 const Support = () => {
   return (
-    <div className='support'>
+    <section className='support'>
       <h2 data-aos='fade'>Support the #ENDSARS movement</h2>
       <p data-aos='fade-right'>
         Here are a few things you can do to support the movement.
@@ -24,7 +24,7 @@ const Support = () => {
           </div>
         )
       })}
-    </div>
+    </section>
   )
 }
 

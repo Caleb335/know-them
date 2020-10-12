@@ -1,7 +1,7 @@
 import React from "react"
 import { Slide } from "react-slideshow-image"
 
-import { images } from "../data"
+import { images } from "../../../data"
 
 const Carousel = () => {
   const fadeAnime = {
