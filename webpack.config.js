@@ -10,7 +10,7 @@ module.exports = {
         modules: [
             'node_modules', 'src'
         ], 
-        extensions: ['.jsx', '.js', '.scss'] 
+        extensions: ['.jsx', '.js', '.scss', '.jpeg', '.jpg', '.png', '.svg', '.gif'] 
     },
     module: {
         rules: [
