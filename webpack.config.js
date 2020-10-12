@@ -39,6 +39,10 @@ module.exports = {
             }
         ]
     },
+    // configure dev server so it stores every route
+    devServer: {
+        historyApiFallback: true
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, "src", "index.html")
