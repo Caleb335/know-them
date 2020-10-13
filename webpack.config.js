@@ -3,7 +3,9 @@ const path = require("path")
 
 module.exports = {
     output: {
-        path: path.resolve(__dirname, "build")
+        path: path.resolve(__dirname, "build"),
+        filename: "[name].js",
+        publicPath: "/build/"
     },
     // to bundle/resolve jsx modules
     resolve: { 
@@ -28,7 +30,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(png|jpe?g|gif|svg)$/,
+                test: /\.(png|svg|jpeg|gif|jpg)$/i,
                 use: ["file-loader"]
             },
             // add sourcemap as regards chrome err
