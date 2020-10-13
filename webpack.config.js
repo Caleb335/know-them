@@ -3,7 +3,7 @@ const path = require("path")
 
 module.exports = {
     output: {
-        path: path.resolve(__dirname, "public"),
+        path: path.resolve(__dirname, "build"),
     },
     // to bundle/resolve jsx modules
     resolve: { 
