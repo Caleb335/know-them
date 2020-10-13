@@ -28,14 +28,13 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(png|svg|jpeg|gif|jpg)$/i,
+                test: /\.(png|svg|jpeg|gif|jpg)$/,
                 use: [
                     {
-                        loader: "url-loader",
+                        loader: "file-loader",
                         options: {
-                            name: '[name].[ext]',
-                            outputPath: 'assets/',
-                            publicPath: '/'
+                            name: '[name].[ext]?[hash]',
+                            outputPath: '/images'
                         }
                     }
                 ]
