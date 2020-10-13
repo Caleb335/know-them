@@ -28,16 +28,11 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(png|svg|jpeg|gif|jpg)$/,
-                use: [
-                    {
-                        loader: "file-loader",
-                        options: {
-                            name: '[name].[ext]?[hash]',
-                            outputPath: '/images'
-                        }
-                    }
-                ]
+                test: /\.(png|svg|jpeg|gif|jpg)$/i,
+                loader: "file-loader",
+                options: {
+                    publicPath: 'assets'
+                }
             },
             // add sourcemap as regards chrome err
             {
