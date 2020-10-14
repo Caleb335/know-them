@@ -30,19 +30,14 @@ module.exports = {
             },
             {
                 test:  /\.(gif|png|jpe?g|svg)$/i,
-                use: [
-                    "file-loader",
-                    {
-                        loader: "image-webpack-loader",
-                        options: {
-                            name: '[name].[contenthash].[ext]',
-                            limit: 1000,
-                            outputPath: "./assets/images",
-                            bypassOnDebug: true,
-                            disable: true
-                        }
+                use: {
+                    loader: "file-loader",                     
+                    options: {
+                        limit: 1000,
+                        name: "[name].[ext]"
                     }
-                ]
+
+                }                    
             },
             // add sourcemap as regards chrome err
             {
