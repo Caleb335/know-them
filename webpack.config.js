@@ -1,6 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const path = require("path")
-const WriteFilePlugin = require("write-file-webpack-plugin")
 
 module.exports = {
     output: {
@@ -24,31 +23,26 @@ module.exports = {
             {
                 test: /\.s[ac]ss$/,
                 use: [
-                    {
-                      loader:"style-loader",
-                    },
-                    {
-                      loader: "css-loader",
-                      options: {
-                          sourceMap: true
-                      }
-                    },
-                    {
-                       loader: "sass-loader",
-                       options: {
-                           sourceMap: true
-                       }
-                    }
+                    "style-loader",
+                    "css-loader",
+                    "sass-loader"
                 ]
             },
             {
-                test: /\.(png|svg|jpeg|gif|jpg)$/i,
-                loader: "file-loader",
-                options: {
-                    name: 'assets/images/[name].[ext]',
-                    limit: 1000,
-                    outputPath: "assets/images"
-                }
+                test:  /\.(gif|png|jpe?g|svg)$/i,
+                use: [
+                    "file-loader",
+                    {
+                        loader: "image-webpack-loader",
+                        options: {
+                            name: '[name].[contenthash].[ext]',
+                            limit: 1000,
+                            outputPath: "assets/images",
+                            bypassOnDebug: true,
+                            disable: true
+                        }
+                    }
+                ]
             },
             // add sourcemap as regards chrome err
             {
@@ -67,14 +61,5 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, "src", "index.html")
         }),
-        new WriteFilePlugin({
-            test: /\.(png|jpeg|svg|gif|jpg)$/,
-            useHashIndex: true
-        })
     ],
-    optimization: {
-        splitChunks: {
-            chunks: "all"
-        }
-    }
 }
