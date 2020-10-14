@@ -37,7 +37,7 @@ module.exports = {
                         options: {
                             name: '[name].[contenthash].[ext]',
                             limit: 1000,
-                            outputPath: "assets/images",
+                            outputPath: "./assets/images",
                             bypassOnDebug: true,
                             disable: true
                         }
