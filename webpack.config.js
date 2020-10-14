@@ -1,6 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin")
-const CopyPlugin = require("copy-webpack-plugin")
 const path = require("path")
+const WriteFilePlugin = require("write-file-webpack-plugin")
 
 module.exports = {
     output: {
@@ -23,16 +23,29 @@ module.exports = {
             {
                 test: /\.s[ac]ss$/,
                 use: [
-                    "style-loader",
-                    "css-loader",
-                    "sass-loader"
+                    {
+                      loader:"style-loader",
+                    },
+                    {
+                      loader: "css-loader",
+                      options: {
+                          sourceMap: true
+                      }
+                    },
+                    {
+                       loader: "sass-loader",
+                       options: {
+                           sourceMap: true
+                       }
+                    }
                 ]
             },
             {
                 test: /\.(png|svg|jpeg|gif|jpg)$/i,
                 loader: "file-loader",
                 options: {
-                    publicPath: 'assets'
+                    name: 'assets/images/[name].[ext]',
+                    limit: 1000
                 }
             },
             // add sourcemap as regards chrome err
@@ -51,13 +64,9 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, "src", "index.html")
         }),
-        new CopyPlugin({
-            patterns: [
-                {
-                    from: "src/assets/images",
-                    to: "[name][path].[contenthash].[ext]"
-                }
-            ]
+        new WriteFilePlugin({
+            test: /\.(png|jpeg|svg|gif|jpg)$/,
+            useHashIndex: true
         })
     ],
     optimization: {

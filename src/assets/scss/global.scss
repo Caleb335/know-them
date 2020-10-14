@@ -27,6 +27,11 @@
     left: 35px;
   }
 }
+
+.flex__mobile {
+  display: flex;
+  margin: 25px;
+}
 // globs end here
 
 .call-to-action {
@@ -63,17 +68,19 @@
 
 // about section starts here
 .about-them {
-  margin-top: 12%;
+  margin-top: -5%;
   margin: 150px;
 
   .about-title {
     font-size: 30px;
   }
 
-  & p {
-    line-height: 30px;
-    margin-top: 25px;
-    font-weight: 300;
+  .about__details {
+    p {
+      line-height: 30px;
+      padding-top: 3%;
+      font-weight: 300;
+    }
   }
 
   @media only screen and (max-width: 576px) {
@@ -84,12 +91,14 @@
 
     .about__details {
       p {
-        font-size: 19px;
-        font-weight: normal;
+        padding-top: 3%;
+        font-size: 20px;
+        font-weight: 300;
       }
     }
   }
 }
+// about section ends here
 
 // spport section starts here
 .support {

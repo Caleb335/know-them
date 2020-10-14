@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import { resources } from "../../../Routes/routes"
+import { resources, about } from "../../../Routes/routes"
 
 import Button from "./Buttons"
 
@@ -11,7 +11,9 @@ const Navbar = () => {
       <nav>
         <ul>
           <li>
-            <Link className='link__text__white'>About</Link>
+            <Link className='link__text__white' to={about}>
+              About
+            </Link>
           </li>
           <li>
             <Link className='link__text__white'>Info</Link>
