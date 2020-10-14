@@ -35,6 +35,7 @@ module.exports = {
                     options: {
                         limit: 1000,
                         name: "[name].[contenthash].[ext]",
+                        // enables the images to show in "prod" mode
                         esModules: false
                     }
 

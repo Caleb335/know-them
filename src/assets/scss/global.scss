@@ -62,40 +62,33 @@
     margin: 0 auto;
     padding: 12px;
 
-    margin-top: -98%;
+    margin-top: -105%;
   }
 }
 
 // about section starts here
 .about-them {
-  margin-top: -5%;
-  margin: 150px;
+  padding: 150px;
 
-  .about-title {
-    font-size: 30px;
+  & h1 {
+    padding-bottom: 4%;
   }
 
   .about__details {
-    p {
+    & p {
       line-height: 30px;
-      padding-top: 3%;
       font-weight: 300;
+      padding-top: 28px;
       text-align: justify;
     }
   }
 
   @media only screen and (max-width: 576px) {
-    margin: auto;
     width: 100%;
-    padding: 20px;
-    margin-top: 18%;
-
-    .about__details {
-      p {
-        padding-top: 3%;
-        font-size: 20px;
-        font-weight: 300;
-      }
+    padding: 15px;
+     
+    & p {
+      font-size: 20px;
     }
   }
 }

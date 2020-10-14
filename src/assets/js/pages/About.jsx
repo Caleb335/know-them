@@ -17,9 +17,6 @@ const About = () => {
             was established to detain, investigate and prosecute people involved
             in crimes like armed robbery, kidnapping and other forms of crimes.
           </p>
-          {/* <div className="flex__mobile">
-
-          </div> */}
           <p data-aos='fade-up'>
             In 2009, after several years of operations the squad grew in number
             and strength. Due to the surge of internet fraudsters and cultism in
