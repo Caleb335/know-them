@@ -1,5 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin")
-const WriteFilePlugin = require("write-file-webpack-plugin")
+const CopyPlugin = require("copy-webpack-plugin")
 const path = require("path")
 
 module.exports = {
@@ -51,6 +51,18 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, "src", "index.html")
         }),
-        new WriteFilePlugin()
-    ]
+        new CopyPlugin({
+            patterns: [
+                {
+                    from: "src/assets/images",
+                    to: "[name][path].[contenthash].[ext]"
+                }
+            ]
+        })
+    ],
+    optimization: {
+        splitChunks: {
+            chunks: "all"
+        }
+    }
 }
