@@ -6,6 +6,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, "build"),
     },
+    
     // to bundle/resolve jsx modules
     resolve: { 
         modules: [
@@ -45,7 +46,8 @@ module.exports = {
                 loader: "file-loader",
                 options: {
                     name: 'assets/images/[name].[ext]',
-                    limit: 1000
+                    limit: 1000,
+                    outputPath: "assets/images"
                 }
             },
             // add sourcemap as regards chrome err
@@ -58,7 +60,8 @@ module.exports = {
     },
     // configure dev server so it stores every route
     devServer: {
-        historyApiFallback: true
+        historyApiFallback: true,
+        contentBase: path.resolve(__dirname, 'src'),
     },
     plugins: [
         new HtmlWebpackPlugin({
