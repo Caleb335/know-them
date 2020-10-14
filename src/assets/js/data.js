@@ -1,23 +1,23 @@
-const una = require("../images/unadey.jpeg")
-const naija = require("../images/9ja-wave.jpeg")
-const obafemi = require("../images/obafemi.jpeg")
-const dude = require("../images/dude-waving.jpeg")
-const cuffed = require("../images/man-cuffed.jpeg")
-const lying = require("../images/man-lying.jpeg")
-const police = require("../images/police.jpeg")
-const donate = require("../images/donate.svg")
-const contact = require("../images/contact.svg")
-const join = require("../images/joinProtests.svg")
-const share = require("../images/share.svg")
+import una from "../images/unadey.jpeg"
+import naija from "../images/9ja-wave.jpeg"
+import obafemi from "../images/obafemi.jpeg"
+import dude from "../images/dude-waving.jpeg"
+import cuffed from "../images/man-cuffed.jpeg"
+import lying from "../images/man-lying.jpeg"
+import police from "../images/police.jpeg"
+import donate from "../images/donate.svg"
+import contact from "../images/contact.svg"
+import join from "../images/joinProtests.svg"
+import share from "../images/share.svg"
 
 export const images = [
   {
     id: 0,
-    src: naija
+    src: naija,
   },
   {
     id: 1,
-    src: dude
+    src: dude,
   },
   {
     id: 2,
@@ -37,7 +37,7 @@ export const images = [
   },
   {
     id: 6,
-    src: una
+    src: una,
   },
 ]
 

@@ -34,7 +34,7 @@ module.exports = {
                     loader: "file-loader",                     
                     options: {
                         limit: 1000,
-                        name: "[name].[ext]"
+                        name: "[name].[contenthash].[ext]"
                     }
 
                 }                    
