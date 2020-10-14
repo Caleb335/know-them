@@ -34,7 +34,8 @@ module.exports = {
                     loader: "file-loader",                     
                     options: {
                         limit: 1000,
-                        name: "[name].[contenthash].[ext]"
+                        name: "[name].[contenthash].[ext]",
+                        esModules: false
                     }
 
                 }                    
