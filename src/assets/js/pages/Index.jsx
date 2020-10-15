@@ -24,7 +24,7 @@ const Index = () => {
             <Button className='btn btn-primary'>Donate</Button>
           </div>
         </section>
-        <Support />
+        <Support id='support' />
       </section>
     </div>
   )

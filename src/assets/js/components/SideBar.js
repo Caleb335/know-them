@@ -26,7 +26,6 @@ const Ul = styled.ul`
     li {
       font-size: 30px;
       margin-top: 3%;
-      text-align: center;
       animation: 3s slideIn linear;
       animation-delay: 2s;
     }
@@ -35,6 +34,7 @@ const Ul = styled.ul`
       background: #000;
       color: #fff;
       margin-left: -4%;
+      box-shadow: 1px 3px 5px #ac0e0e;
     }
   }
 `
@@ -48,7 +48,9 @@ const SideBar = ({ open }) => {
         </Link>
       </li>
       <li>
-        <Link className='link__text__white' to="#">Info</Link>
+        <Link className='link__text__white' to='#'>
+          Info
+        </Link>
       </li>
       <li>
         <Link className='link__text__white' to={resources}>
@@ -56,7 +58,9 @@ const SideBar = ({ open }) => {
         </Link>
       </li>
       <li>
-        <Link className='link__text__white'>Support</Link>
+        <a className='link__text__white' href='#support'>
+          Support
+        </a>
       </li>
       <Button className='btn btn-primary'>Donate</Button>
     </Ul>

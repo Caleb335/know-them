@@ -3,9 +3,9 @@ import Button from "../components/Buttons"
 
 import { support } from "../data"
 
-const Support = () => {
+const Support = ({ id }) => {
   return (
-    <section className='support'>
+    <section className='support' id={id}>
       <h2 data-aos='fade'>Support the #ENDSARS movement</h2>
       <p data-aos='fade-right'>
         Here are a few things you can do to support the movement.
