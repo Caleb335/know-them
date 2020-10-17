@@ -36,7 +36,8 @@ const Nav = styled.nav`
   }
 
   @media only screen and (max-width: 576px) {
-    padding-bottom: 10px;
+    padding: 0 35px 35px;
+    padding-bottom: 15px;
 
     nav li {
       display: none;

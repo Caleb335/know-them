@@ -49,6 +49,7 @@ export const support = [
       "You can donate funds to the help the protesters sustain the protest.  We promise complete  transparency in the disbursement of funds",
     icon: donate,
     action: "DONATE",
+    location: "https://donatebtc.feministcoalition2020.com/",
   },
   {
     id: 1,
@@ -65,6 +66,7 @@ export const support = [
       "As Nigerians, it is our right to demand good governance from our leaders. If you would like to send an automated message/email to your state senator on the issue of SARS, click the button below.",
     icon: contact,
     action: "Send a message",
+    location: "https://endsars.netlify.app/"
   },
   {
     id: 3,
@@ -73,5 +75,6 @@ export const support = [
       "If you are unable to donate or join a live protest, join the online outcry. Use the hashtags #ENDSARS, #ENDSARSNOW, #EndSARSImmediately, #EndPoliceBrutality.",
     icon: share,
     action: "share",
+    location: "https://ctt.ac/Mw01N",
   },
 ]

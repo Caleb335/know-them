@@ -1,5 +1,6 @@
 import React from "react"
 import Button from "../components/Buttons"
+import { Link } from "react-router-dom"
 
 import { support } from "../data"
 
@@ -18,7 +19,13 @@ const Support = ({ id }) => {
               <h1 data-aos='fade-right'>{supportType.title}</h1>
               <p data-aos='fade-right'>{supportType.details}</p>
               <Button anime='fade' className='btn btn-primary btn-50'>
-                {supportType.action}
+                <a
+                  className='link__text__white'
+                  target='__blank'
+                  href={supportType.location}
+                >
+                  {supportType.action}
+                </a>
               </Button>
             </div>
           </div>

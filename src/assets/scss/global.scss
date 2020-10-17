@@ -14,6 +14,12 @@
     color: $btn-primary;
     transition: all 0.5s ease-in-out;
   }
+
+  @media only screen and (max-width: 576px) {
+    &:hover {
+      color: $primary;
+    }
+  }
 }
 
 .search-box {

@@ -62,7 +62,15 @@ const SideBar = ({ open }) => {
           Support
         </a>
       </li>
-      <Button className='btn btn-primary'>Donate</Button>
+      <Button className='btn btn-primary'>
+        <a
+          href='https://donatebtc.feministcoalition2020.com/'
+          target='__blank'
+          className='link__text__white'
+        >
+          Donate
+        </a>
+      </Button>
     </Ul>
   )
 }
